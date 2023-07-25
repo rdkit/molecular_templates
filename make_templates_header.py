@@ -8,7 +8,7 @@ Use like:
     python make_templates_header.py
 
 Optionally, you can specify the path to the templates.smi file:
-    python make_templates_header.py --output /path/to/templates.smi
+    python make_templates_header.py --output /path/to/template_smiles.h
 """
 
 from rdkit import Chem
