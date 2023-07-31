@@ -1,10 +1,11 @@
 name: Contributed template check
 on:
   pull_request:
-    types: [opened,edited,ready_for_review]
+    branches:
+    - main
 
 jobs:
-  specific_review_requested:
+  check_new_templates:
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Dummy action'
