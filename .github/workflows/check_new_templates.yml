@@ -1,9 +1,5 @@
 name: Contributed template check
-on:
-  pull_request:
-    branches:
-    - main
-
+on: pull_request
 jobs:
   check_new_templates:
     runs-on: ubuntu-latest
