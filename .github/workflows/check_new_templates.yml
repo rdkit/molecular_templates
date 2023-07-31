@@ -1,4 +1,4 @@
-name: Reusable Sketcher WASM workflow
+name: Contributed template check
 on:
   pull_request:
     types: [opened,edited,ready_for_review]
