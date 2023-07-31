@@ -1,0 +1,10 @@
+name: Reusable Sketcher WASM workflow
+on:
+  pull_request:
+    types: [opened,ready_for_review]
+
+jobs:
+  specific_review_requested:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Dummy action'
