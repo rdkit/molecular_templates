@@ -9,7 +9,7 @@ IMGUR_UPLOAD_URL = "https://api.imgur.com/3/upload.json"
 UPLOAD_RETRIES = 5
 
 IMGUR_CLIENT_ID = os.environ.get('IMGUR_CLIENT_ID', None)
-IMGUR_TOKEN = json.loads(os.environ.get('IMGUR_TOKEN', ''))
+IMGUR_TOKEN = json.loads(os.environ.get('IMGUR_TOKEN', '[]'))
 
 
 def upload_img(fpath, title):

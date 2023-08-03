@@ -1,0 +1,76 @@
+name: Update the header file and image gallery
+on:
+  workflow_dispatch: ~
+  workflow_call: ~
+  push:
+    branches:
+    - main
+    paths:
+      - templates.smi
+
+permissions:
+  contents: write
+
+env:
+  tpl_hdr: 'template_smiles.h'
+  gallery_file: 'gallery.md'
+  img_dir: 'img'
+
+jobs:
+  Check_new_templates:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+    - name: Set up Python & RDKit
+      uses: mamba-org/setup-micromamba@v1
+      with:
+        micromamba-version: 'latest'
+        environment-file: environment.yml
+        generate-run-shell: true
+        cache-environment: true
+        post-cleanup: 'none'
+    - name: Run basic checks
+      if: success()
+      run: pytest -n=auto checks/test_requisites.py
+      shell: micromamba-shell {0}
+    - name: Run check for duplicates
+      if: success()
+      run: pytest -sv checks/test_duplicates.py
+      shell: micromamba-shell {0}
+    - name: Generate the header file
+      id: header-gen
+      if: success()
+      run: python3 src/header_generation.py
+      shell: micromamba-shell {0}
+    - name: Test the header file
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
+      run: g++ -std=c++17 -I. checks/test_program.cpp -o test && ./test
+      shell: micromamba-shell {0}
+    - name: Update the gallery
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
+      run: python3 src/update_gallery.py
+      shell: micromamba-shell {0}
+
+    - name: Commit and push the new header file
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
+      run: |
+          if ! git diff --quiet --exit-code ${{ env.tpl_hdr }}; then
+              git config user.name "github-actions[bot]"
+              git config user.email "github-actions[bot]@noreply.github.com"
+
+              git checkout main
+              git pull
+
+              git add ${{ env.tpl_hdr }} ${{ env.gallery_file }} ${{ env.img_dir }}
+
+              coauthor=$(git log -1 --pretty=format:'%an <%ae>' -- ${{ env.tpl_hdr }})
+
+              > commitmsg
+              echo -e "[bot] Update molecular templates header\n\n" >> commitmsg
+              echo -e "Co-authored-by: ${coauthor}\n" >> commitmsg
+
+              git commit -F commitmsg
+
+              git push
+          fi
