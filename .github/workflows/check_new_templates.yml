@@ -1,5 +1,7 @@
 name: Contributed template check
 on:
+  workflow_dispatch: ~
+  workflow_call: ~
   pull_request:
     branches:
     - main
@@ -9,14 +11,23 @@ on:
 permissions:
   pull-requests: write
 
+env:
+  TPL_FILE: 'templates.smi'
+  TPL_HDR: 'template_smiles.h'
+  GALLERY_FILE: 'gallery.md'
+  IMG_DIR: 'img'
+
+
 jobs:
   Check_new_templates:
     runs-on: ubuntu-latest
     steps:
+
     - name: Checkout repo
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
+
     - name: Set up Python & RDKit
       uses: mamba-org/setup-micromamba@v1
       with:
@@ -25,32 +36,93 @@ jobs:
         generate-run-shell: true
         cache-environment: true
         post-cleanup: 'none'
+
     - name: Run basic checks
       if: success()
       run: pytest -n=auto checks/test_requisites.py
       shell: micromamba-shell {0}
+
     - name: Run check for duplicates
       if: success()
       run: pytest -sv checks/test_duplicates.py
       shell: micromamba-shell {0}
-    - name: Run image generation and upload
-      id: img-gen
+
+    - name: Generate the header file
+      id: header-gen
       if: success()
-      env:
-        GH_PR_BASE: ${{ github.event.pull_request.base.sha }}
-        IMGUR_CLIENT_ID: ${{ secrets.IMGUR_CLIENT_ID }}
-        IMGUR_TOKEN: ${{ secrets.IMGUR_TOKEN }}
-      run: python3 src/img_generation.py
+      run: python3 src/header_generation.py
       shell: micromamba-shell {0}
+
+    - name: Test the header file
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
+      run: g++ -std=c++17 -I. checks/test_program.cpp -o test && ./test
+      shell: micromamba-shell {0}
+
+    - name: Update the gallery
+      id: img-gen
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
+      env:
+        GH_PR_BASE: ${{ github.event.pull_request.base.sha }}`
+        GH_REPO_URL: ${{ github.repositoryUrl }}
+      run: python3 src/update_gallery.py
+      shell: micromamba-shell {0}
+
+    - name: Commit and push the new header file
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
+      run: |
+          if ! git diff --quiet --exit-code ${{ env.TPL_HDR }}; then
+              git config user.name "github-actions[bot]"
+              git config user.email "github-actions[bot]@noreply.github.com"
+
+              git diff
+
+              git add ${{ env.TPL_HDR }} ${{ env.GALLERY_FILE }} ${{ env.IMG_DIR }}
+
+              coauthor=$(git log -1 --pretty=format:'%an <%ae>' -- ${{ env.TPL_HDR }})
+
+              > commitmsg
+              echo -e "[bot] Update molecular templates header and gallery\n\n" >> commitmsg
+              echo -e "Co-authored-by: ${coauthor}\n" >> commitmsg
+
+              git commit -F commitmsg
+
+              git push
+          fi
+
     - name: Post images in PR
-      if: success()
+      if: ${{ steps.header-gen.outputs.header_changed == 'true' && success() }}
       uses: actions/github-script@v6
       with:
         script: |
-          imgs = ${{ steps.img-gen.outputs.template_imgs }}
+          imgs = ${{ steps.img-gen.outputs.pr_images }}
           github.rest.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
             body: imgs
+          })
+
+    - name: Update PR with no changes
+      if: ${{ steps.header-gen.outputs.header_changed != 'true' && success() }}
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: "No new templates were added."
+          })
+
+    - name: Update PR with error msg
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          run_url = "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: "Something went wrong, please check " + run_url + " for more information."
           })

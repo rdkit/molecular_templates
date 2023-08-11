@@ -2,7 +2,7 @@ name: mol_templates
 channels:
   - conda-forge
 dependencies:
-  - gitpython
+  - gxx
   - python=3.11
   - pytest
   - pytest-xdist
