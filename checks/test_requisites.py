@@ -1,8 +1,6 @@
 import pytest
-
-from rdkit import Chem
-
 from common_code import load_templates
+from rdkit import Chem
 
 
 def generate_params():

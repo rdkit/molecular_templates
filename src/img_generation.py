@@ -56,6 +56,7 @@ def draw_png(cxsmiles, idx, output_dir='.'):
     png.save(fpath)
     return fpath, legend
 
+
 def draw_svg(cxsmiles, fname, legend):
     mol = Chem.MolFromSmiles(cxsmiles)
     if not mol.GetNumConformers():
@@ -69,8 +70,6 @@ def draw_svg(cxsmiles, fname, legend):
 
     with open(fname, 'w') as f:
         f.write(drawer.GetDrawingText())
-
-
 
 
 def export_image_urls(template_imgs):
