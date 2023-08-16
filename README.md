@@ -26,3 +26,7 @@ Please make sure that the templates you contribute follow these guidelines:
 - Your templates should represent a single molecule.
 - Each template should must consist of exactly one ring system.
 - Please do not submit duplicates for existing templates.
+
+## Current templates Gallery
+
+You can check how the current templates look like in the [Gallery](gallery.md).
