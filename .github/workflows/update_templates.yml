@@ -23,7 +23,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
     - name: Set up Python & RDKit
-      uses: mamba-org/setup-micromamba@v1
+      uses: mamba-org/setup-micromamba@v2
       with:
         micromamba-version: 'latest'
         environment-file: environment.yml

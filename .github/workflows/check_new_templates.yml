@@ -31,7 +31,7 @@ jobs:
         git diff templates.smi
 
     - name: Set up Python & RDKit
-      uses: mamba-org/setup-micromamba@v1
+      uses: mamba-org/setup-micromamba@v2
       with:
         micromamba-version: 'latest'
         environment-file: environment.yml
