@@ -1,12 +1,12 @@
 #include <iostream>
 
-#include "template_smiles.h"
+#include "template_smarts.h"
 
 int main()
 {
     size_t i = 0;
-    for (const auto& cxsmiles : TEMPLATE_SMILES) {
-        std::cout << "Template #" << ++i << ": " << cxsmiles << std::endl;
+    for (const auto& cxsmarts : TEMPLATE_SMARTS) {
+        std::cout << "Template #" << ++i << ": " << cxsmarts << std::endl;
     }
 
     std::cout << "All templates in header listed, check passed." << std::endl;
