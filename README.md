@@ -4,7 +4,7 @@ This repository manages the templates for ring systems used for 2D coordinate ge
 
 ## How to contribute
 
-**PLEASE DO NOT MODIFY template_smiles.h DIRECTLY**, it will be automatically updated once your PR is merged.
+**PLEASE DO NOT MODIFY template_smarts.h DIRECTLY**, it will be automatically updated once your PR is merged.
 
 To contribute (one or more) ring system templates, you should do the following:
 

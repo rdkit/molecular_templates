@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 env:
-  tpl_hdr: 'template_smiles.h'
+  tpl_hdr: 'template_smarts.h'
   gallery_file: 'gallery.md'
   img_dir: 'img'
 
