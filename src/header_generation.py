@@ -6,7 +6,7 @@ import tempfile
 from rdkit import Chem
 from rdkit import Geometry
 
-HEADER_FILE = 'template_smiles.h'
+HEADER_FILE = 'template_smarts.h'
 TEMPLATE_FILE = 'templates.smi'
 
 HEADER_TEXT = """//
@@ -28,7 +28,7 @@ HEADER_TEXT = """//
 #include <vector>
 
 // clang-format off
-const std::vector<std::string> TEMPLATE_SMILES = {
+const std::vector<std::string> TEMPLATE_SMARTS = {
 """
 
 
