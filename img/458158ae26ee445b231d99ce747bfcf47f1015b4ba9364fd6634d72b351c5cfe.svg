@@ -1,0 +1,991 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='400px' height='400px' viewBox='0 0 400 400'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='400.0' height='400.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 236.0,44.8 L 207.2,44.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 207.2,44.8 L 192.8,69.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 192.8,69.8 L 164.0,69.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-3 atom-3 atom-4' d='M 164.0,69.8 L 149.6,44.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-4 atom-5' d='M 149.6,44.8 L 120.8,44.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-5 atom-5 atom-6' d='M 120.8,44.8 L 106.4,69.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-6 atom-6 atom-7' d='M 106.4,69.8 L 77.6,69.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-7 atom-7 atom-8' d='M 77.6,69.8 L 63.2,94.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-8 atom-8 atom-9' d='M 63.2,94.7 L 77.6,119.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-9 atom-9 atom-10' d='M 77.6,119.6 L 63.2,144.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-10 atom-10 atom-11' d='M 63.2,144.6 L 34.4,144.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-11 atom-11 atom-12' d='M 34.4,144.6 L 20.0,169.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-12 atom-12 atom-13' d='M 20.0,169.5 L 34.4,194.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-13 atom-13 atom-14' d='M 34.4,194.5 L 20.0,219.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-14 atom-14 atom-15' d='M 20.0,219.4 L 34.4,244.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-15 atom-15 atom-16' d='M 34.4,244.4 L 20.0,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-16 atom-16 atom-17' d='M 20.0,269.3 L 34.4,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-17 atom-17 atom-18' d='M 34.4,294.2 L 63.2,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-18 atom-18 atom-19' d='M 63.2,294.2 L 77.6,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-19 atom-19 atom-20' d='M 77.6,269.3 L 106.4,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-20 atom-20 atom-21' d='M 106.4,269.3 L 120.8,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-21 atom-21 atom-22' d='M 120.8,294.2 L 149.6,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-22 atom-22 atom-23' d='M 149.6,294.2 L 164.0,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-23 atom-23 atom-24' d='M 164.0,269.3 L 192.8,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-24 atom-24 atom-25' d='M 192.8,269.3 L 207.2,244.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-25 atom-25 atom-26' d='M 207.2,244.4 L 236.0,244.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-26 atom-26 atom-27' d='M 236.0,244.4 L 250.4,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-27 atom-27 atom-28' d='M 250.4,269.3 L 279.2,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-28 atom-28 atom-29' d='M 279.2,269.3 L 293.6,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-29 atom-29 atom-30' d='M 293.6,294.2 L 322.4,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-30 atom-30 atom-31' d='M 322.4,294.2 L 351.2,319.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-31 atom-31 atom-32' d='M 351.2,319.2 L 380.0,294.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-32 atom-32 atom-33' d='M 380.0,294.2 L 365.6,269.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-33 atom-33 atom-34' d='M 365.6,269.3 L 380.0,244.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-34 atom-34 atom-35' d='M 380.0,244.4 L 365.6,219.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-35 atom-35 atom-36' d='M 365.6,219.4 L 380.0,194.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-36 atom-36 atom-37' d='M 380.0,194.5 L 365.6,169.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-37 atom-37 atom-38' d='M 365.6,169.5 L 336.8,169.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-38 atom-38 atom-39' d='M 336.8,169.5 L 322.4,144.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-39 atom-39 atom-40' d='M 322.4,144.6 L 293.6,144.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-40 atom-40 atom-41' d='M 293.6,144.6 L 279.2,119.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-41 atom-41 atom-42' d='M 279.2,119.6 L 250.4,119.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-42 atom-42 atom-43' d='M 250.4,119.6 L 236.0,94.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-43 atom-43 atom-44' d='M 236.0,94.7 L 250.4,69.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-44 atom-44 atom-0' d='M 250.4,69.8 L 236.0,44.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 234.6,44.8 L 236.0,44.8 L 236.7,46.1' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 208.6,44.8 L 207.2,44.8 L 206.5,46.1' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 193.5,68.5 L 192.8,69.8 L 191.4,69.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 165.4,69.8 L 164.0,69.8 L 163.3,68.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 150.3,46.1 L 149.6,44.8 L 148.2,44.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 122.2,44.8 L 120.8,44.8 L 120.1,46.1' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 107.1,68.5 L 106.4,69.8 L 105.0,69.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 79.0,69.8 L 77.6,69.8 L 76.9,71.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 63.9,93.5 L 63.2,94.7 L 63.9,96.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 76.9,118.4 L 77.6,119.6 L 76.9,120.9' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 63.9,143.3 L 63.2,144.6 L 61.8,144.6' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 35.8,144.6 L 34.4,144.6 L 33.7,145.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 20.7,168.3 L 20.0,169.5 L 20.7,170.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 33.7,193.2 L 34.4,194.5 L 33.7,195.7' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 20.7,218.2 L 20.0,219.4 L 20.7,220.7' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 33.7,243.1 L 34.4,244.4 L 33.7,245.6' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 20.7,268.0 L 20.0,269.3 L 20.7,270.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 33.7,293.0 L 34.4,294.2 L 35.8,294.2' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 61.8,294.2 L 63.2,294.2 L 63.9,293.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 76.9,270.5 L 77.6,269.3 L 79.0,269.3' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 105.0,269.3 L 106.4,269.3 L 107.1,270.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 120.1,293.0 L 120.8,294.2 L 122.2,294.2' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 148.2,294.2 L 149.6,294.2 L 150.3,293.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 163.3,270.5 L 164.0,269.3 L 165.4,269.3' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 191.4,269.3 L 192.8,269.3 L 193.5,268.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 206.5,245.6 L 207.2,244.4 L 208.6,244.4' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 234.6,244.4 L 236.0,244.4 L 236.7,245.6' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 249.7,268.0 L 250.4,269.3 L 251.8,269.3' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 277.8,269.3 L 279.2,269.3 L 279.9,270.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 292.9,293.0 L 293.6,294.2 L 295.0,294.2' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 321.0,294.2 L 322.4,294.2 L 323.8,295.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 349.8,317.9 L 351.2,319.2 L 352.6,317.9' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 378.6,295.5 L 380.0,294.2 L 379.3,293.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 366.3,270.5 L 365.6,269.3 L 366.3,268.0' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 379.3,245.6 L 380.0,244.4 L 379.3,243.1' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 366.3,220.7 L 365.6,219.4 L 366.3,218.2' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 379.3,195.7 L 380.0,194.5 L 379.3,193.2' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 366.3,170.8 L 365.6,169.5 L 364.2,169.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 338.2,169.5 L 336.8,169.5 L 336.1,168.3' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 323.1,145.8 L 322.4,144.6 L 321.0,144.6' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 295.0,144.6 L 293.6,144.6 L 292.9,143.3' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 279.9,120.9 L 279.2,119.6 L 277.8,119.6' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 251.8,119.6 L 250.4,119.6 L 249.7,118.4' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 236.7,96.0 L 236.0,94.7 L 236.7,93.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 249.7,71.0 L 250.4,69.8 L 249.7,68.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path class='legend' d='M 27.1 375.1
+L 25.6 375.1
+L 25.3 377.1
+L 26.8 377.1
+L 26.6 377.8
+L 25.1 377.8
+L 24.8 379.9
+L 23.9 379.9
+L 24.3 377.8
+L 22.4 377.8
+L 22.1 379.9
+L 21.2 379.9
+L 21.5 377.8
+L 20.0 377.8
+L 20.1 377.1
+L 21.7 377.1
+L 22.0 375.1
+L 20.5 375.1
+L 20.6 374.3
+L 22.2 374.3
+L 22.5 372.1
+L 23.4 372.1
+L 23.0 374.3
+L 24.9 374.3
+L 25.2 372.1
+L 26.1 372.1
+L 25.7 374.3
+L 27.3 374.3
+L 27.1 375.1
+M 24.4 377.1
+L 24.7 375.1
+L 22.9 375.1
+L 22.5 377.1
+L 24.4 377.1
+' fill='#000000'/>
+<path class='legend' d='M 33.1 377.2
+L 34.1 377.2
+L 34.1 378.1
+L 33.1 378.1
+L 33.1 379.9
+L 32.1 379.9
+L 32.1 378.1
+L 28.1 378.1
+L 28.1 377.4
+L 31.5 372.1
+L 33.1 372.1
+L 33.1 377.2
+M 29.4 377.2
+L 32.1 377.2
+L 32.1 372.8
+L 29.4 377.2
+' fill='#000000'/>
+<path class='legend' d='M 37.8 372.0
+Q 39.2 372.0, 39.9 373.0
+Q 40.6 373.9, 40.6 375.8
+Q 40.6 377.8, 39.7 378.9
+Q 38.9 380.0, 37.2 380.0
+Q 36.7 380.0, 36.3 379.9
+Q 35.9 379.8, 35.5 379.5
+L 35.9 378.8
+Q 36.5 379.1, 37.2 379.1
+Q 38.3 379.1, 38.9 378.4
+Q 39.4 377.7, 39.5 376.2
+Q 39.1 376.6, 38.6 376.8
+Q 38.1 377.0, 37.6 377.0
+Q 36.9 377.0, 36.3 376.7
+Q 35.8 376.4, 35.5 375.8
+Q 35.2 375.3, 35.2 374.6
+Q 35.2 373.9, 35.5 373.3
+Q 35.9 372.7, 36.5 372.4
+Q 37.1 372.0, 37.8 372.0
+M 36.3 374.6
+Q 36.3 375.3, 36.7 375.7
+Q 37.1 376.1, 37.8 376.1
+Q 38.2 376.1, 38.7 375.9
+Q 39.2 375.7, 39.5 375.4
+Q 39.4 374.1, 39.0 373.5
+Q 38.6 372.9, 37.8 372.9
+Q 37.4 372.9, 37.0 373.2
+Q 36.7 373.4, 36.5 373.8
+Q 36.3 374.1, 36.3 374.6
+' fill='#000000'/>
+<path class='legend' d='M 47.0 377.2
+L 47.9 377.2
+L 47.9 378.1
+L 47.0 378.1
+L 47.0 379.9
+L 46.0 379.9
+L 46.0 378.1
+L 41.9 378.1
+L 41.9 377.4
+L 45.3 372.1
+L 47.0 372.1
+L 47.0 377.2
+M 43.2 377.2
+L 46.0 377.2
+L 46.0 372.8
+L 43.2 377.2
+' fill='#000000'/>
+<path class='legend' d='' fill='#000000'/>
+<path class='legend' d='M 53.3 376.0
+Q 53.3 374.1, 54.2 373.1
+Q 55.1 372.0, 56.8 372.0
+Q 58.4 372.0, 59.3 373.2
+L 58.6 373.8
+Q 57.9 372.9, 56.8 372.9
+Q 55.7 372.9, 55.0 373.7
+Q 54.4 374.5, 54.4 376.0
+Q 54.4 377.5, 55.1 378.3
+Q 55.7 379.1, 57.0 379.1
+Q 57.8 379.1, 58.8 378.6
+L 59.1 379.4
+Q 58.7 379.7, 58.1 379.8
+Q 57.5 380.0, 56.8 380.0
+Q 55.1 380.0, 54.2 379.0
+Q 53.3 377.9, 53.3 376.0
+' fill='#000000'/>
+<path class='legend' d='M 60.8 379.0
+L 62.5 379.0
+L 62.5 373.2
+L 60.6 373.8
+L 60.3 373.1
+L 62.7 372.1
+L 63.5 372.2
+L 63.5 379.0
+L 65.0 379.0
+L 65.0 379.9
+L 60.8 379.9
+L 60.8 379.0
+' fill='#000000'/>
+<path class='legend' d='M 66.1 376.0
+Q 66.1 374.1, 67.0 373.1
+Q 67.9 372.0, 69.6 372.0
+Q 71.2 372.0, 72.1 373.2
+L 71.3 373.8
+Q 70.7 372.9, 69.6 372.9
+Q 68.4 372.9, 67.8 373.7
+Q 67.2 374.5, 67.2 376.0
+Q 67.2 377.5, 67.8 378.3
+Q 68.5 379.1, 69.7 379.1
+Q 70.6 379.1, 71.6 378.6
+L 71.9 379.4
+Q 71.5 379.7, 70.9 379.8
+Q 70.3 380.0, 69.6 380.0
+Q 67.9 380.0, 67.0 379.0
+Q 66.1 377.9, 66.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 73.1 376.0
+Q 73.1 374.1, 74.0 373.1
+Q 74.9 372.0, 76.6 372.0
+Q 78.2 372.0, 79.1 373.2
+L 78.4 373.8
+Q 77.7 372.9, 76.6 372.9
+Q 75.5 372.9, 74.8 373.7
+Q 74.2 374.5, 74.2 376.0
+Q 74.2 377.5, 74.9 378.3
+Q 75.5 379.1, 76.8 379.1
+Q 77.6 379.1, 78.6 378.6
+L 78.9 379.4
+Q 78.5 379.7, 77.9 379.8
+Q 77.3 380.0, 76.6 380.0
+Q 74.9 380.0, 74.0 379.0
+Q 73.1 377.9, 73.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 80.1 376.0
+Q 80.1 374.1, 81.0 373.1
+Q 81.9 372.0, 83.7 372.0
+Q 85.3 372.0, 86.1 373.2
+L 85.4 373.8
+Q 84.8 372.9, 83.7 372.9
+Q 82.5 372.9, 81.9 373.7
+Q 81.2 374.5, 81.2 376.0
+Q 81.2 377.5, 81.9 378.3
+Q 82.5 379.1, 83.8 379.1
+Q 84.6 379.1, 85.6 378.6
+L 86.0 379.4
+Q 85.5 379.7, 84.9 379.8
+Q 84.3 380.0, 83.6 380.0
+Q 81.9 380.0, 81.0 379.0
+Q 80.1 377.9, 80.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 87.2 376.0
+Q 87.2 374.1, 88.1 373.1
+Q 89.0 372.0, 90.7 372.0
+Q 92.3 372.0, 93.2 373.2
+L 92.4 373.8
+Q 91.8 372.9, 90.7 372.9
+Q 89.5 372.9, 88.9 373.7
+Q 88.3 374.5, 88.3 376.0
+Q 88.3 377.5, 88.9 378.3
+Q 89.6 379.1, 90.8 379.1
+Q 91.7 379.1, 92.7 378.6
+L 93.0 379.4
+Q 92.6 379.7, 92.0 379.8
+Q 91.3 380.0, 90.7 380.0
+Q 89.0 380.0, 88.1 379.0
+Q 87.2 377.9, 87.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 94.2 376.0
+Q 94.2 374.1, 95.1 373.1
+Q 96.0 372.0, 97.7 372.0
+Q 99.3 372.0, 100.2 373.2
+L 99.5 373.8
+Q 98.8 372.9, 97.7 372.9
+Q 96.5 372.9, 95.9 373.7
+Q 95.3 374.5, 95.3 376.0
+Q 95.3 377.5, 95.9 378.3
+Q 96.6 379.1, 97.8 379.1
+Q 98.7 379.1, 99.7 378.6
+L 100.0 379.4
+Q 99.6 379.7, 99.0 379.8
+Q 98.4 380.0, 97.7 380.0
+Q 96.0 380.0, 95.1 379.0
+Q 94.2 377.9, 94.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 101.2 376.0
+Q 101.2 374.1, 102.1 373.1
+Q 103.0 372.0, 104.7 372.0
+Q 106.4 372.0, 107.2 373.2
+L 106.5 373.8
+Q 105.9 372.9, 104.7 372.9
+Q 103.6 372.9, 102.9 373.7
+Q 102.3 374.5, 102.3 376.0
+Q 102.3 377.5, 103.0 378.3
+Q 103.6 379.1, 104.9 379.1
+Q 105.7 379.1, 106.7 378.6
+L 107.0 379.4
+Q 106.6 379.7, 106.0 379.8
+Q 105.4 380.0, 104.7 380.0
+Q 103.0 380.0, 102.1 379.0
+Q 101.2 377.9, 101.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 108.2 376.0
+Q 108.2 374.1, 109.1 373.1
+Q 110.1 372.0, 111.8 372.0
+Q 113.4 372.0, 114.2 373.2
+L 113.5 373.8
+Q 112.9 372.9, 111.8 372.9
+Q 110.6 372.9, 110.0 373.7
+Q 109.4 374.5, 109.4 376.0
+Q 109.4 377.5, 110.0 378.3
+Q 110.6 379.1, 111.9 379.1
+Q 112.8 379.1, 113.8 378.6
+L 114.1 379.4
+Q 113.7 379.7, 113.0 379.8
+Q 112.4 380.0, 111.7 380.0
+Q 110.1 380.0, 109.1 379.0
+Q 108.2 377.9, 108.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 115.3 376.0
+Q 115.3 374.1, 116.2 373.1
+Q 117.1 372.0, 118.8 372.0
+Q 120.4 372.0, 121.3 373.2
+L 120.5 373.8
+Q 119.9 372.9, 118.8 372.9
+Q 117.6 372.9, 117.0 373.7
+Q 116.4 374.5, 116.4 376.0
+Q 116.4 377.5, 117.0 378.3
+Q 117.7 379.1, 118.9 379.1
+Q 119.8 379.1, 120.8 378.6
+L 121.1 379.4
+Q 120.7 379.7, 120.1 379.8
+Q 119.5 380.0, 118.8 380.0
+Q 117.1 380.0, 116.2 379.0
+Q 115.3 377.9, 115.3 376.0
+' fill='#000000'/>
+<path class='legend' d='M 122.3 376.0
+Q 122.3 374.1, 123.2 373.1
+Q 124.1 372.0, 125.8 372.0
+Q 127.4 372.0, 128.3 373.2
+L 127.6 373.8
+Q 126.9 372.9, 125.8 372.9
+Q 124.7 372.9, 124.0 373.7
+Q 123.4 374.5, 123.4 376.0
+Q 123.4 377.5, 124.1 378.3
+Q 124.7 379.1, 126.0 379.1
+Q 126.8 379.1, 127.8 378.6
+L 128.1 379.4
+Q 127.7 379.7, 127.1 379.8
+Q 126.5 380.0, 125.8 380.0
+Q 124.1 380.0, 123.2 379.0
+Q 122.3 377.9, 122.3 376.0
+' fill='#000000'/>
+<path class='legend' d='M 129.3 376.0
+Q 129.3 374.1, 130.2 373.1
+Q 131.1 372.0, 132.9 372.0
+Q 134.5 372.0, 135.3 373.2
+L 134.6 373.8
+Q 134.0 372.9, 132.9 372.9
+Q 131.7 372.9, 131.1 373.7
+Q 130.4 374.5, 130.4 376.0
+Q 130.4 377.5, 131.1 378.3
+Q 131.7 379.1, 133.0 379.1
+Q 133.8 379.1, 134.8 378.6
+L 135.1 379.4
+Q 134.7 379.7, 134.1 379.8
+Q 133.5 380.0, 132.8 380.0
+Q 131.1 380.0, 130.2 379.0
+Q 129.3 377.9, 129.3 376.0
+' fill='#000000'/>
+<path class='legend' d='M 136.3 376.0
+Q 136.3 374.1, 137.2 373.1
+Q 138.2 372.0, 139.9 372.0
+Q 141.5 372.0, 142.4 373.2
+L 141.6 373.8
+Q 141.0 372.9, 139.9 372.9
+Q 138.7 372.9, 138.1 373.7
+Q 137.5 374.5, 137.5 376.0
+Q 137.5 377.5, 138.1 378.3
+Q 138.8 379.1, 140.0 379.1
+Q 140.9 379.1, 141.9 378.6
+L 142.2 379.4
+Q 141.8 379.7, 141.2 379.8
+Q 140.5 380.0, 139.9 380.0
+Q 138.2 380.0, 137.2 379.0
+Q 136.3 377.9, 136.3 376.0
+' fill='#000000'/>
+<path class='legend' d='M 143.4 376.0
+Q 143.4 374.1, 144.3 373.1
+Q 145.2 372.0, 146.9 372.0
+Q 148.5 372.0, 149.4 373.2
+L 148.7 373.8
+Q 148.0 372.9, 146.9 372.9
+Q 145.7 372.9, 145.1 373.7
+Q 144.5 374.5, 144.5 376.0
+Q 144.5 377.5, 145.1 378.3
+Q 145.8 379.1, 147.0 379.1
+Q 147.9 379.1, 148.9 378.6
+L 149.2 379.4
+Q 148.8 379.7, 148.2 379.8
+Q 147.6 380.0, 146.9 380.0
+Q 145.2 380.0, 144.3 379.0
+Q 143.4 377.9, 143.4 376.0
+' fill='#000000'/>
+<path class='legend' d='M 150.4 376.0
+Q 150.4 374.1, 151.3 373.1
+Q 152.2 372.0, 153.9 372.0
+Q 155.6 372.0, 156.4 373.2
+L 155.7 373.8
+Q 155.1 372.9, 153.9 372.9
+Q 152.8 372.9, 152.1 373.7
+Q 151.5 374.5, 151.5 376.0
+Q 151.5 377.5, 152.2 378.3
+Q 152.8 379.1, 154.1 379.1
+Q 154.9 379.1, 155.9 378.6
+L 156.2 379.4
+Q 155.8 379.7, 155.2 379.8
+Q 154.6 380.0, 153.9 380.0
+Q 152.2 380.0, 151.3 379.0
+Q 150.4 377.9, 150.4 376.0
+' fill='#000000'/>
+<path class='legend' d='M 157.4 376.0
+Q 157.4 374.1, 158.3 373.1
+Q 159.2 372.0, 161.0 372.0
+Q 162.6 372.0, 163.4 373.2
+L 162.7 373.8
+Q 162.1 372.9, 161.0 372.9
+Q 159.8 372.9, 159.2 373.7
+Q 158.6 374.5, 158.6 376.0
+Q 158.6 377.5, 159.2 378.3
+Q 159.8 379.1, 161.1 379.1
+Q 162.0 379.1, 163.0 378.6
+L 163.3 379.4
+Q 162.9 379.7, 162.2 379.8
+Q 161.6 380.0, 160.9 380.0
+Q 159.2 380.0, 158.3 379.0
+Q 157.4 377.9, 157.4 376.0
+' fill='#000000'/>
+<path class='legend' d='M 164.5 376.0
+Q 164.5 374.1, 165.4 373.1
+Q 166.3 372.0, 168.0 372.0
+Q 169.6 372.0, 170.5 373.2
+L 169.7 373.8
+Q 169.1 372.9, 168.0 372.9
+Q 166.8 372.9, 166.2 373.7
+Q 165.6 374.5, 165.6 376.0
+Q 165.6 377.5, 166.2 378.3
+Q 166.9 379.1, 168.1 379.1
+Q 169.0 379.1, 170.0 378.6
+L 170.3 379.4
+Q 169.9 379.7, 169.3 379.8
+Q 168.7 380.0, 168.0 380.0
+Q 166.3 380.0, 165.4 379.0
+Q 164.5 377.9, 164.5 376.0
+' fill='#000000'/>
+<path class='legend' d='M 171.5 376.0
+Q 171.5 374.1, 172.4 373.1
+Q 173.3 372.0, 175.0 372.0
+Q 176.6 372.0, 177.5 373.2
+L 176.8 373.8
+Q 176.1 372.9, 175.0 372.9
+Q 173.9 372.9, 173.2 373.7
+Q 172.6 374.5, 172.6 376.0
+Q 172.6 377.5, 173.2 378.3
+Q 173.9 379.1, 175.2 379.1
+Q 176.0 379.1, 177.0 378.6
+L 177.3 379.4
+Q 176.9 379.7, 176.3 379.8
+Q 175.7 380.0, 175.0 380.0
+Q 173.3 380.0, 172.4 379.0
+Q 171.5 377.9, 171.5 376.0
+' fill='#000000'/>
+<path class='legend' d='M 178.5 376.0
+Q 178.5 374.1, 179.4 373.1
+Q 180.3 372.0, 182.1 372.0
+Q 183.7 372.0, 184.5 373.2
+L 183.8 373.8
+Q 183.2 372.9, 182.1 372.9
+Q 180.9 372.9, 180.3 373.7
+Q 179.6 374.5, 179.6 376.0
+Q 179.6 377.5, 180.3 378.3
+Q 180.9 379.1, 182.2 379.1
+Q 183.0 379.1, 184.0 378.6
+L 184.3 379.4
+Q 183.9 379.7, 183.3 379.8
+Q 182.7 380.0, 182.0 380.0
+Q 180.3 380.0, 179.4 379.0
+Q 178.5 377.9, 178.5 376.0
+' fill='#000000'/>
+<path class='legend' d='M 185.5 376.0
+Q 185.5 374.1, 186.4 373.1
+Q 187.4 372.0, 189.1 372.0
+Q 190.7 372.0, 191.5 373.2
+L 190.8 373.8
+Q 190.2 372.9, 189.1 372.9
+Q 187.9 372.9, 187.3 373.7
+Q 186.7 374.5, 186.7 376.0
+Q 186.7 377.5, 187.3 378.3
+Q 188.0 379.1, 189.2 379.1
+Q 190.1 379.1, 191.1 378.6
+L 191.4 379.4
+Q 191.0 379.7, 190.4 379.8
+Q 189.7 380.0, 189.1 380.0
+Q 187.4 380.0, 186.4 379.0
+Q 185.5 377.9, 185.5 376.0
+' fill='#000000'/>
+<path class='legend' d='M 192.6 376.0
+Q 192.6 374.1, 193.5 373.1
+Q 194.4 372.0, 196.1 372.0
+Q 197.7 372.0, 198.6 373.2
+L 197.9 373.8
+Q 197.2 372.9, 196.1 372.9
+Q 194.9 372.9, 194.3 373.7
+Q 193.7 374.5, 193.7 376.0
+Q 193.7 377.5, 194.3 378.3
+Q 195.0 379.1, 196.2 379.1
+Q 197.1 379.1, 198.1 378.6
+L 198.4 379.4
+Q 198.0 379.7, 197.4 379.8
+Q 196.8 380.0, 196.1 380.0
+Q 194.4 380.0, 193.5 379.0
+Q 192.6 377.9, 192.6 376.0
+' fill='#000000'/>
+<path class='legend' d='M 199.6 376.0
+Q 199.6 374.1, 200.5 373.1
+Q 201.4 372.0, 203.1 372.0
+Q 204.7 372.0, 205.6 373.2
+L 204.9 373.8
+Q 204.3 372.9, 203.1 372.9
+Q 202.0 372.9, 201.3 373.7
+Q 200.7 374.5, 200.7 376.0
+Q 200.7 377.5, 201.4 378.3
+Q 202.0 379.1, 203.3 379.1
+Q 204.1 379.1, 205.1 378.6
+L 205.4 379.4
+Q 205.0 379.7, 204.4 379.8
+Q 203.8 380.0, 203.1 380.0
+Q 201.4 380.0, 200.5 379.0
+Q 199.6 377.9, 199.6 376.0
+' fill='#000000'/>
+<path class='legend' d='M 206.6 376.0
+Q 206.6 374.1, 207.5 373.1
+Q 208.4 372.0, 210.2 372.0
+Q 211.8 372.0, 212.6 373.2
+L 211.9 373.8
+Q 211.3 372.9, 210.2 372.9
+Q 209.0 372.9, 208.4 373.7
+Q 207.8 374.5, 207.8 376.0
+Q 207.8 377.5, 208.4 378.3
+Q 209.0 379.1, 210.3 379.1
+Q 211.1 379.1, 212.1 378.6
+L 212.5 379.4
+Q 212.1 379.7, 211.4 379.8
+Q 210.8 380.0, 210.1 380.0
+Q 208.4 380.0, 207.5 379.0
+Q 206.6 377.9, 206.6 376.0
+' fill='#000000'/>
+<path class='legend' d='M 213.7 376.0
+Q 213.7 374.1, 214.6 373.1
+Q 215.5 372.0, 217.2 372.0
+Q 218.8 372.0, 219.7 373.2
+L 218.9 373.8
+Q 218.3 372.9, 217.2 372.9
+Q 216.0 372.9, 215.4 373.7
+Q 214.8 374.5, 214.8 376.0
+Q 214.8 377.5, 215.4 378.3
+Q 216.1 379.1, 217.3 379.1
+Q 218.2 379.1, 219.2 378.6
+L 219.5 379.4
+Q 219.1 379.7, 218.5 379.8
+Q 217.8 380.0, 217.2 380.0
+Q 215.5 380.0, 214.6 379.0
+Q 213.7 377.9, 213.7 376.0
+' fill='#000000'/>
+<path class='legend' d='M 220.7 376.0
+Q 220.7 374.1, 221.6 373.1
+Q 222.5 372.0, 224.2 372.0
+Q 225.8 372.0, 226.7 373.2
+L 226.0 373.8
+Q 225.3 372.9, 224.2 372.9
+Q 223.0 372.9, 222.4 373.7
+Q 221.8 374.5, 221.8 376.0
+Q 221.8 377.5, 222.4 378.3
+Q 223.1 379.1, 224.3 379.1
+Q 225.2 379.1, 226.2 378.6
+L 226.5 379.4
+Q 226.1 379.7, 225.5 379.8
+Q 224.9 380.0, 224.2 380.0
+Q 222.5 380.0, 221.6 379.0
+Q 220.7 377.9, 220.7 376.0
+' fill='#000000'/>
+<path class='legend' d='M 227.7 376.0
+Q 227.7 374.1, 228.6 373.1
+Q 229.5 372.0, 231.3 372.0
+Q 232.9 372.0, 233.7 373.2
+L 233.0 373.8
+Q 232.4 372.9, 231.3 372.9
+Q 230.1 372.9, 229.5 373.7
+Q 228.8 374.5, 228.8 376.0
+Q 228.8 377.5, 229.5 378.3
+Q 230.1 379.1, 231.4 379.1
+Q 232.2 379.1, 233.2 378.6
+L 233.5 379.4
+Q 233.1 379.7, 232.5 379.8
+Q 231.9 380.0, 231.2 380.0
+Q 229.5 380.0, 228.6 379.0
+Q 227.7 377.9, 227.7 376.0
+' fill='#000000'/>
+<path class='legend' d='M 234.7 376.0
+Q 234.7 374.1, 235.6 373.1
+Q 236.6 372.0, 238.3 372.0
+Q 239.9 372.0, 240.7 373.2
+L 240.0 373.8
+Q 239.4 372.9, 238.3 372.9
+Q 237.1 372.9, 236.5 373.7
+Q 235.9 374.5, 235.9 376.0
+Q 235.9 377.5, 236.5 378.3
+Q 237.2 379.1, 238.4 379.1
+Q 239.3 379.1, 240.3 378.6
+L 240.6 379.4
+Q 240.2 379.7, 239.5 379.8
+Q 238.9 380.0, 238.2 380.0
+Q 236.6 380.0, 235.6 379.0
+Q 234.7 377.9, 234.7 376.0
+' fill='#000000'/>
+<path class='legend' d='M 241.8 376.0
+Q 241.8 374.1, 242.7 373.1
+Q 243.6 372.0, 245.3 372.0
+Q 246.9 372.0, 247.8 373.2
+L 247.0 373.8
+Q 246.4 372.9, 245.3 372.9
+Q 244.1 372.9, 243.5 373.7
+Q 242.9 374.5, 242.9 376.0
+Q 242.9 377.5, 243.5 378.3
+Q 244.2 379.1, 245.4 379.1
+Q 246.3 379.1, 247.3 378.6
+L 247.6 379.4
+Q 247.2 379.7, 246.6 379.8
+Q 246.0 380.0, 245.3 380.0
+Q 243.6 380.0, 242.7 379.0
+Q 241.8 377.9, 241.8 376.0
+' fill='#000000'/>
+<path class='legend' d='M 248.8 376.0
+Q 248.8 374.1, 249.7 373.1
+Q 250.6 372.0, 252.3 372.0
+Q 253.9 372.0, 254.8 373.2
+L 254.1 373.8
+Q 253.4 372.9, 252.3 372.9
+Q 251.2 372.9, 250.5 373.7
+Q 249.9 374.5, 249.9 376.0
+Q 249.9 377.5, 250.6 378.3
+Q 251.2 379.1, 252.5 379.1
+Q 253.3 379.1, 254.3 378.6
+L 254.6 379.4
+Q 254.2 379.7, 253.6 379.8
+Q 253.0 380.0, 252.3 380.0
+Q 250.6 380.0, 249.7 379.0
+Q 248.8 377.9, 248.8 376.0
+' fill='#000000'/>
+<path class='legend' d='M 255.8 376.0
+Q 255.8 374.1, 256.7 373.1
+Q 257.6 372.0, 259.4 372.0
+Q 261.0 372.0, 261.8 373.2
+L 261.1 373.8
+Q 260.5 372.9, 259.4 372.9
+Q 258.2 372.9, 257.6 373.7
+Q 256.9 374.5, 256.9 376.0
+Q 256.9 377.5, 257.6 378.3
+Q 258.2 379.1, 259.5 379.1
+Q 260.3 379.1, 261.3 378.6
+L 261.7 379.4
+Q 261.2 379.7, 260.6 379.8
+Q 260.0 380.0, 259.3 380.0
+Q 257.6 380.0, 256.7 379.0
+Q 255.8 377.9, 255.8 376.0
+' fill='#000000'/>
+<path class='legend' d='M 262.9 376.0
+Q 262.9 374.1, 263.8 373.1
+Q 264.7 372.0, 266.4 372.0
+Q 268.0 372.0, 268.9 373.2
+L 268.1 373.8
+Q 267.5 372.9, 266.4 372.9
+Q 265.2 372.9, 264.6 373.7
+Q 264.0 374.5, 264.0 376.0
+Q 264.0 377.5, 264.6 378.3
+Q 265.3 379.1, 266.5 379.1
+Q 267.4 379.1, 268.4 378.6
+L 268.7 379.4
+Q 268.3 379.7, 267.7 379.8
+Q 267.0 380.0, 266.4 380.0
+Q 264.7 380.0, 263.8 379.0
+Q 262.9 377.9, 262.9 376.0
+' fill='#000000'/>
+<path class='legend' d='M 269.9 376.0
+Q 269.9 374.1, 270.8 373.1
+Q 271.7 372.0, 273.4 372.0
+Q 275.0 372.0, 275.9 373.2
+L 275.2 373.8
+Q 274.5 372.9, 273.4 372.9
+Q 272.2 372.9, 271.6 373.7
+Q 271.0 374.5, 271.0 376.0
+Q 271.0 377.5, 271.6 378.3
+Q 272.3 379.1, 273.5 379.1
+Q 274.4 379.1, 275.4 378.6
+L 275.7 379.4
+Q 275.3 379.7, 274.7 379.8
+Q 274.1 380.0, 273.4 380.0
+Q 271.7 380.0, 270.8 379.0
+Q 269.9 377.9, 269.9 376.0
+' fill='#000000'/>
+<path class='legend' d='M 276.9 376.0
+Q 276.9 374.1, 277.8 373.1
+Q 278.7 372.0, 280.5 372.0
+Q 282.1 372.0, 282.9 373.2
+L 282.2 373.8
+Q 281.6 372.9, 280.5 372.9
+Q 279.3 372.9, 278.6 373.7
+Q 278.0 374.5, 278.0 376.0
+Q 278.0 377.5, 278.7 378.3
+Q 279.3 379.1, 280.6 379.1
+Q 281.4 379.1, 282.4 378.6
+L 282.7 379.4
+Q 282.3 379.7, 281.7 379.8
+Q 281.1 380.0, 280.4 380.0
+Q 278.7 380.0, 277.8 379.0
+Q 276.9 377.9, 276.9 376.0
+' fill='#000000'/>
+<path class='legend' d='M 283.9 376.0
+Q 283.9 374.1, 284.8 373.1
+Q 285.8 372.0, 287.5 372.0
+Q 289.1 372.0, 289.9 373.2
+L 289.2 373.8
+Q 288.6 372.9, 287.5 372.9
+Q 286.3 372.9, 285.7 373.7
+Q 285.1 374.5, 285.1 376.0
+Q 285.1 377.5, 285.7 378.3
+Q 286.3 379.1, 287.6 379.1
+Q 288.5 379.1, 289.5 378.6
+L 289.8 379.4
+Q 289.4 379.7, 288.7 379.8
+Q 288.1 380.0, 287.4 380.0
+Q 285.8 380.0, 284.8 379.0
+Q 283.9 377.9, 283.9 376.0
+' fill='#000000'/>
+<path class='legend' d='M 291.0 376.0
+Q 291.0 374.1, 291.9 373.1
+Q 292.8 372.0, 294.5 372.0
+Q 296.1 372.0, 297.0 373.2
+L 296.2 373.8
+Q 295.6 372.9, 294.5 372.9
+Q 293.3 372.9, 292.7 373.7
+Q 292.1 374.5, 292.1 376.0
+Q 292.1 377.5, 292.7 378.3
+Q 293.4 379.1, 294.6 379.1
+Q 295.5 379.1, 296.5 378.6
+L 296.8 379.4
+Q 296.4 379.7, 295.8 379.8
+Q 295.2 380.0, 294.5 380.0
+Q 292.8 380.0, 291.9 379.0
+Q 291.0 377.9, 291.0 376.0
+' fill='#000000'/>
+<path class='legend' d='M 298.0 376.0
+Q 298.0 374.1, 298.9 373.1
+Q 299.8 372.0, 301.5 372.0
+Q 303.1 372.0, 304.0 373.2
+L 303.3 373.8
+Q 302.6 372.9, 301.5 372.9
+Q 300.4 372.9, 299.7 373.7
+Q 299.1 374.5, 299.1 376.0
+Q 299.1 377.5, 299.8 378.3
+Q 300.4 379.1, 301.7 379.1
+Q 302.5 379.1, 303.5 378.6
+L 303.8 379.4
+Q 303.4 379.7, 302.8 379.8
+Q 302.2 380.0, 301.5 380.0
+Q 299.8 380.0, 298.9 379.0
+Q 298.0 377.9, 298.0 376.0
+' fill='#000000'/>
+<path class='legend' d='M 305.0 376.0
+Q 305.0 374.1, 305.9 373.1
+Q 306.8 372.0, 308.6 372.0
+Q 310.2 372.0, 311.0 373.2
+L 310.3 373.8
+Q 309.7 372.9, 308.6 372.9
+Q 307.4 372.9, 306.8 373.7
+Q 306.1 374.5, 306.1 376.0
+Q 306.1 377.5, 306.8 378.3
+Q 307.4 379.1, 308.7 379.1
+Q 309.5 379.1, 310.5 378.6
+L 310.9 379.4
+Q 310.4 379.7, 309.8 379.8
+Q 309.2 380.0, 308.5 380.0
+Q 306.8 380.0, 305.9 379.0
+Q 305.0 377.9, 305.0 376.0
+' fill='#000000'/>
+<path class='legend' d='M 312.1 376.0
+Q 312.1 374.1, 313.0 373.1
+Q 313.9 372.0, 315.6 372.0
+Q 317.2 372.0, 318.1 373.2
+L 317.3 373.8
+Q 316.7 372.9, 315.6 372.9
+Q 314.4 372.9, 313.8 373.7
+Q 313.2 374.5, 313.2 376.0
+Q 313.2 377.5, 313.8 378.3
+Q 314.5 379.1, 315.7 379.1
+Q 316.6 379.1, 317.6 378.6
+L 317.9 379.4
+Q 317.5 379.7, 316.9 379.8
+Q 316.2 380.0, 315.6 380.0
+Q 313.9 380.0, 313.0 379.0
+Q 312.1 377.9, 312.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 319.1 376.0
+Q 319.1 374.1, 320.0 373.1
+Q 320.9 372.0, 322.6 372.0
+Q 324.2 372.0, 325.1 373.2
+L 324.4 373.8
+Q 323.7 372.9, 322.6 372.9
+Q 321.4 372.9, 320.8 373.7
+Q 320.2 374.5, 320.2 376.0
+Q 320.2 377.5, 320.8 378.3
+Q 321.5 379.1, 322.7 379.1
+Q 323.6 379.1, 324.6 378.6
+L 324.9 379.4
+Q 324.5 379.7, 323.9 379.8
+Q 323.3 380.0, 322.6 380.0
+Q 320.9 380.0, 320.0 379.0
+Q 319.1 377.9, 319.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 326.1 376.0
+Q 326.1 374.1, 327.0 373.1
+Q 327.9 372.0, 329.6 372.0
+Q 331.3 372.0, 332.1 373.2
+L 331.4 373.8
+Q 330.8 372.9, 329.6 372.9
+Q 328.5 372.9, 327.8 373.7
+Q 327.2 374.5, 327.2 376.0
+Q 327.2 377.5, 327.9 378.3
+Q 328.5 379.1, 329.8 379.1
+Q 330.6 379.1, 331.6 378.6
+L 331.9 379.4
+Q 331.5 379.7, 330.9 379.8
+Q 330.3 380.0, 329.6 380.0
+Q 327.9 380.0, 327.0 379.0
+Q 326.1 377.9, 326.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 333.1 376.0
+Q 333.1 374.1, 334.0 373.1
+Q 335.0 372.0, 336.7 372.0
+Q 338.3 372.0, 339.1 373.2
+L 338.4 373.8
+Q 337.8 372.9, 336.7 372.9
+Q 335.5 372.9, 334.9 373.7
+Q 334.3 374.5, 334.3 376.0
+Q 334.3 377.5, 334.9 378.3
+Q 335.5 379.1, 336.8 379.1
+Q 337.7 379.1, 338.7 378.6
+L 339.0 379.4
+Q 338.6 379.7, 337.9 379.8
+Q 337.3 380.0, 336.6 380.0
+Q 335.0 380.0, 334.0 379.0
+Q 333.1 377.9, 333.1 376.0
+' fill='#000000'/>
+<path class='legend' d='M 340.2 376.0
+Q 340.2 374.1, 341.1 373.1
+Q 342.0 372.0, 343.7 372.0
+Q 345.3 372.0, 346.2 373.2
+L 345.4 373.8
+Q 344.8 372.9, 343.7 372.9
+Q 342.5 372.9, 341.9 373.7
+Q 341.3 374.5, 341.3 376.0
+Q 341.3 377.5, 341.9 378.3
+Q 342.6 379.1, 343.8 379.1
+Q 344.7 379.1, 345.7 378.6
+L 346.0 379.4
+Q 345.6 379.7, 345.0 379.8
+Q 344.4 380.0, 343.7 380.0
+Q 342.0 380.0, 341.1 379.0
+Q 340.2 377.9, 340.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 347.2 376.0
+Q 347.2 374.1, 348.1 373.1
+Q 349.0 372.0, 350.7 372.0
+Q 352.3 372.0, 353.2 373.2
+L 352.5 373.8
+Q 351.8 372.9, 350.7 372.9
+Q 349.6 372.9, 348.9 373.7
+Q 348.3 374.5, 348.3 376.0
+Q 348.3 377.5, 349.0 378.3
+Q 349.6 379.1, 350.9 379.1
+Q 351.7 379.1, 352.7 378.6
+L 353.0 379.4
+Q 352.6 379.7, 352.0 379.8
+Q 351.4 380.0, 350.7 380.0
+Q 349.0 380.0, 348.1 379.0
+Q 347.2 377.9, 347.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 354.2 376.0
+Q 354.2 374.1, 355.1 373.1
+Q 356.0 372.0, 357.8 372.0
+Q 359.4 372.0, 360.2 373.2
+L 359.5 373.8
+Q 358.9 372.9, 357.8 372.9
+Q 356.6 372.9, 356.0 373.7
+Q 355.3 374.5, 355.3 376.0
+Q 355.3 377.5, 356.0 378.3
+Q 356.6 379.1, 357.9 379.1
+Q 358.7 379.1, 359.7 378.6
+L 360.0 379.4
+Q 359.6 379.7, 359.0 379.8
+Q 358.4 380.0, 357.7 380.0
+Q 356.0 380.0, 355.1 379.0
+Q 354.2 377.9, 354.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 361.2 376.0
+Q 361.2 374.1, 362.2 373.1
+Q 363.1 372.0, 364.8 372.0
+Q 366.4 372.0, 367.3 373.2
+L 366.5 373.8
+Q 365.9 372.9, 364.8 372.9
+Q 363.6 372.9, 363.0 373.7
+Q 362.4 374.5, 362.4 376.0
+Q 362.4 377.5, 363.0 378.3
+Q 363.7 379.1, 364.9 379.1
+Q 365.8 379.1, 366.8 378.6
+L 367.1 379.4
+Q 366.7 379.7, 366.1 379.8
+Q 365.4 380.0, 364.8 380.0
+Q 363.1 380.0, 362.2 379.0
+Q 361.2 377.9, 361.2 376.0
+' fill='#000000'/>
+<path class='legend' d='M 368.3 376.0
+Q 368.3 374.1, 369.2 373.1
+Q 370.1 372.0, 371.8 372.0
+Q 373.4 372.0, 374.3 373.2
+L 373.6 373.8
+Q 372.9 372.9, 371.8 372.9
+Q 370.6 372.9, 370.0 373.7
+Q 369.4 374.5, 369.4 376.0
+Q 369.4 377.5, 370.0 378.3
+Q 370.7 379.1, 371.9 379.1
+Q 372.8 379.1, 373.8 378.6
+L 374.1 379.4
+Q 373.7 379.7, 373.1 379.8
+Q 372.5 380.0, 371.8 380.0
+Q 370.1 380.0, 369.2 379.0
+Q 368.3 377.9, 368.3 376.0
+' fill='#000000'/>
+<path class='legend' d='M 375.7 379.0
+L 377.4 379.0
+L 377.4 373.2
+L 375.6 373.8
+L 375.3 373.1
+L 377.7 372.1
+L 378.5 372.2
+L 378.5 379.0
+L 380.0 379.0
+L 380.0 379.9
+L 375.7 379.9
+L 375.7 379.0
+' fill='#000000'/>
+</svg>
