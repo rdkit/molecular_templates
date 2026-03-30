@@ -123,6 +123,11 @@ def mark_inner_atoms(smiles):
         query_atom = Chem.AtomFromSmarts(query)
         mol.ReplaceAtom(aidx, query_atom)
 
+    # Replace all bonds with query bonds that match any bond type
+    for bond in mol.GetBonds():
+        query_bond = Chem.BondFromSmarts('~')  # ~ matches any bond type
+        mol.ReplaceBond(bond.GetIdx(), query_bond)
+
     return Chem.MolToCXSmarts(mol)
 
 
