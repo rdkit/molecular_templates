@@ -9,7 +9,7 @@ from rdkit import Geometry
 HEADER_FILE = 'template_smarts.h'
 TEMPLATE_FILE = 'templates.smi'
 
-HEADER_TEXT = """//
+HEADER_TEXT_TPL = """//
 //  Copyright (C) 2023 Schrödinger, LLC
 //
 //   @@ All Rights Reserved @@
@@ -23,12 +23,12 @@ HEADER_TEXT = """//
 // templates, please refer to instructions in:
 // https://github.com/rdkit/molecular_templates/blob/main/README.md
 //
+//
 
-#include <string>
-#include <vector>
+#include <array>
 
 // clang-format off
-const std::vector<std::string> TEMPLATE_SMARTS = {
+inline constexpr std::array<const char*, {}> TEMPLATE_SMARTS = {{
 """
 
 
@@ -132,17 +132,17 @@ def mark_inner_atoms(smiles):
 
 
 def generate_header(generated_header_path):
+    smarts_lines = []
+    with open(TEMPLATE_FILE, 'r') as f_in:
+        for line in f_in:
+            if not (cxsmiles := line.strip()):
+                continue
+        # TO_DO: replace bonds with query bonds
+            cxsmiles = mark_inner_atoms(cxsmiles)
+            smarts_lines.append(f'    "{cxsmiles}",\n')
     with open(generated_header_path, 'w') as f_out:
-        f_out.write(HEADER_TEXT)
-        with open(TEMPLATE_FILE, 'r') as f_in:
-            for line in f_in:
-                if not (cxsmiles := line.strip()):
-                    continue
-
-            # TO_DO: replace bonds with query bonds
-                cxsmiles = mark_inner_atoms(cxsmiles)
-
-                f_out.write(f'    "{cxsmiles}",\n')
+        f_out.write(HEADER_TEXT_TPL.format(len(smarts_lines)))
+        f_out.writelines(''.join(smarts_lines))
         f_out.write('};\n// clang-format on\n')
     print(f"Successfully generated {generated_header_path}")
 
