@@ -9,7 +9,8 @@ from rdkit import Geometry
 HEADER_FILE = 'template_smarts.h'
 TEMPLATE_FILE = 'templates.smi'
 
-HEADER_TEXT_TPL = """//
+HEADER_TEXT_TPL = """#pragma once
+//
 //  Copyright (C) 2023 Schrödinger, LLC
 //
 //   @@ All Rights Reserved @@
