@@ -26,7 +26,7 @@ def generate_gallery(templates):
     with open(gallery_file, 'w') as f:
         f.write('# Templates\n\n')
         for smiles, img in templates:
-            f.write(f'![{smiles}]({img})')
+            f.write(f'![{smiles}]({img})\n')
 
 
 def clean_up_imgs(templates):

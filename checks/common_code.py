@@ -3,6 +3,7 @@ def load_templates():
         for i, line in enumerate(f, 1):
             cxsmiles = line.strip()
             if not cxsmiles:
-                continue
+                raise ValueError(f"Empty line at line {i} in templates.smi; "
+                                 "empty/blank lines are not allowed.")
             smiles = cxsmiles.split('|', 1)[0]
             yield i, smiles, cxsmiles
