@@ -1,0 +1,117 @@
+name: Publish contributed template images
+
+on:
+  workflow_run:
+    workflows:
+      - Contributed template check
+    types:
+      - completed
+
+permissions:
+  actions: read
+  contents: read
+  pull-requests: write
+
+jobs:
+  Publish_images:
+    if: github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted publisher code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+
+      - name: Download check artifact
+        id: download
+        continue-on-error: true
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        with:
+          name: template-check-${{ github.event.workflow_run.id }}-${{ github.event.workflow_run.run_attempt }}
+          path: template-images
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Verify artifact belongs to this PR run
+        if: steps.download.outcome == 'success'
+        id: pr
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          script: |
+            const fs = require('fs');
+            const run = context.payload.workflow_run;
+            const identity = JSON.parse(fs.readFileSync('template-images/pr.json', 'utf8'));
+            if (!Number.isSafeInteger(identity.number) || identity.number < 1 ||
+                !/^[0-9a-f]{40}$/.test(identity.head_sha)) {
+              throw new Error('Invalid PR identity artifact');
+            }
+
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: identity.number,
+            });
+            if (pr.base.ref !== 'main' ||
+                run.head_sha !== identity.head_sha ||
+                pr.head.repo?.full_name !== run.head_repository?.full_name ||
+                pr.head.ref !== run.head_branch ||
+                (run.pull_requests.length > 0 &&
+                 !run.pull_requests.some(item => item.number === identity.number))) {
+              throw new Error('Artifact PR does not match the completed workflow run');
+            }
+            if (pr.head.sha !== identity.head_sha) {
+              core.info('PR head has changed since this check; a newer run will handle it');
+              return;
+            }
+            if (pr.state !== 'open') {
+              core.info('PR is closed; skip publishing images');
+              return;
+            }
+            core.setOutput('number', identity.number);
+
+      - name: Set up Python for image upload
+        if: steps.pr.outputs.number != '' && github.event.workflow_run.conclusion == 'success'
+        uses: mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3.2.1
+        with:
+          micromamba-version: latest
+          environment-file: environment.yml
+          generate-run-shell: true
+          cache-environment: false
+          post-cleanup: none
+
+      - name: Upload images to Imgur
+        if: steps.pr.outputs.number != '' && github.event.workflow_run.conclusion == 'success'
+        env:
+          IMGUR_CLIENT_ID: ${{ secrets.IMGUR_CLIENT_ID }}
+          IMGUR_TOKEN: ${{ secrets.IMGUR_TOKEN }}
+        run: python3 src/publish_pr_images.py template-images
+        shell: micromamba-shell {0}
+
+      - name: Post images in PR
+        if: steps.pr.outputs.number != '' && github.event.workflow_run.conclusion == 'success'
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        env:
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        with:
+          script: |
+            const fs = require('fs');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: Number(process.env.PR_NUMBER),
+              body: fs.readFileSync('pr-comment.md', 'utf8'),
+            });
+
+      - name: Comment on failed check
+        if: steps.pr.outputs.number != '' && github.event.workflow_run.conclusion == 'failure'
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        env:
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: Number(process.env.PR_NUMBER),
+              body: `Something went wrong, please check ${context.payload.workflow_run.html_url} for more information.`,
+            });

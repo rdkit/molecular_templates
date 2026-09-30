@@ -1,11 +1,9 @@
+import argparse
 import os
-import tempfile
 
 import git
 from rdkit import Chem
 from rdkit.Chem.Draw import MolDraw2DSVG, MolToImage
-
-from imgur_upload import upload_img
 
 img_width = 400
 img_height = 400
@@ -72,23 +70,18 @@ def draw_svg(cxsmiles, fname, legend):
         f.write(drawer.GetDrawingText())
 
 
-def export_image_urls(template_imgs):
-    if gh_output := os.environ.get('GITHUB_OUTPUT', ''):
-        markdown_imgs = [f'![{title}]({url})' for url, title in template_imgs]
-        with open(gh_output, 'a') as f:
-            f.write(f"template_imgs=\"{''.join(markdown_imgs)}\"")
-
-
 def main():
-    template_imgs = []
-    with tempfile.TemporaryDirectory() as tmpdir:
-        for idx, cxsmiles in get_new_templates():
-            fpath, title = draw_png(cxsmiles, idx, tmpdir)
-            img_url, title = upload_img(fpath, title)
-            template_imgs.append((img_url, title))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--output-dir', required=True)
+    args = parser.parse_args()
 
-    export_image_urls(template_imgs)
-    print(f'{len(template_imgs)} images generated and uploaded')
+    os.makedirs(args.output_dir, exist_ok=True)
+    count = 0
+    for idx, cxsmiles in get_new_templates():
+        draw_png(cxsmiles, idx, args.output_dir)
+        count += 1
+
+    print(f'{count} images generated')
 
 
 if __name__ == '__main__':
