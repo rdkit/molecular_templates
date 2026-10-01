@@ -1,98 +1,81 @@
 name: Contributed template check
+
 on:
-  pull_request_target:
+  pull_request:
     branches:
-    - main
+      - main
     paths:
       - templates.smi
 
 permissions:
-  pull-requests: write
+  contents: read
 
 jobs:
   Check_new_templates:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout current molecular_templates repo
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
 
-    - name: Checkout current molecular_templates repo
-      uses: actions/checkout@v3
+      - name: Checkout templates contributed in PR
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          sparse-checkout: templates.smi
+          path: contributed
+          persist-credentials: false
 
-    - name: Checkout templates contributed in PR
-      uses: actions/checkout@v3
-      with:
-        repository: ${{ github.event.pull_request.head.repo.full_name }}
-        ref: ${{ github.event.pull_request.head.ref }}
-        sparse-checkout: 'templates.smi'
-        path: 'contributed'
+      - name: Record PR identity and import templates
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          test -f contributed/templates.smi
+          test ! -L contributed/templates.smi
+          mkdir -p template-images
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
 
-    - name: Import new templates file
-      run: |
-        cp -f contributed/templates.smi templates.smi
-        git diff templates.smi
+          Path('template-images/pr.json').write_text(json.dumps({
+              'number': int(os.environ['PR_NUMBER']),
+              'head_sha': os.environ['PR_HEAD_SHA'],
+          }))
+          PY
+          cp contributed/templates.smi templates.smi
+          git diff -- templates.smi
 
-    - name: Set up Python & RDKit
-      uses: mamba-org/setup-micromamba@v2
-      with:
-        micromamba-version: 'latest'
-        environment-file: environment.yml
-        generate-run-shell: true
-        cache-environment: true
-        post-cleanup: 'none'
+      - name: Set up Python and RDKit
+        uses: mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3.2.1
+        with:
+          micromamba-version: latest
+          environment-file: environment.yml
+          generate-run-shell: true
+          cache-environment: false
+          post-cleanup: none
 
-    - name: Run basic checks
-      if: success()
-      run: pytest -n=auto checks/test_requisites.py
-      shell: micromamba-shell {0}
+      - name: Run basic checks
+        run: pytest -n=auto checks/test_requisites.py
+        shell: micromamba-shell {0}
 
-    - name: Run check for duplicates
-      if: success()
-      run: pytest -sv checks/test_duplicates.py
-      shell: micromamba-shell {0}
+      - name: Run check for duplicates
+        run: pytest -sv checks/test_duplicates.py
+        shell: micromamba-shell {0}
 
-    - name: Run image generation and upload
-      id: img-gen
-      if: success()
-      env:
-        IMGUR_CLIENT_ID: ${{ secrets.IMGUR_CLIENT_ID }}
-        IMGUR_TOKEN: ${{ secrets.IMGUR_TOKEN }}
-      run: python3 src/img_generation.py
-      shell: micromamba-shell {0}
+      - name: Render new template images
+        run: python3 src/img_generation.py --output-dir template-images
+        shell: micromamba-shell {0}
 
-    - name: Comment if no images generated
-      if: success() && steps.img-gen.outputs.template_imgs == '""'
-      uses: actions/github-script@v6
-      with:
-        script: |
-          run_url = "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: "No new templates were found, so no images were generated."
-          })
-
-    - name: Post images in PR
-      if: success() && steps.img-gen.outputs.template_imgs != '""'
-      uses: actions/github-script@v6
-      with:
-        script: |
-          imgs = ${{ steps.img-gen.outputs.template_imgs }}
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: imgs
-          })
-
-    - name: Update PR with error msg
-      if: failure()
-      uses: actions/github-script@v6
-      with:
-        script: |
-          run_url = "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: "Something went wrong, please check " + run_url + " for more information."
-          })
+      - name: Save PR identity and images
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: template-check-${{ github.run_id }}-${{ github.run_attempt }}
+          path: template-images/
+          if-no-files-found: warn
+          retention-days: 7
