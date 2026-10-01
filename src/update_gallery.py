@@ -19,7 +19,9 @@ def get_hash(s):
 def get_new_templates():
     with open(tpl_file, 'r') as f:
         for i, line in enumerate(f, 1):
-            yield i, line.strip()
+            template = line.strip()
+            if template:
+                yield i, template
 
 
 def generate_gallery(templates):
